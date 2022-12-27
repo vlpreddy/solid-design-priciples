@@ -1,0 +1,53 @@
+Single Responsibility Principle
+  https://youthjosh.com/solid-principles-single-responsibility-principle.html
+
+Open Close Principles - Open for Extension but close for modification
+  https://youthjosh.com/solid-principles-open-close-principle.html
+   1. Do not modify code when change is requested
+   2. Better is to extend application, add new classes method
+   3. When code needs to be modified when requirement change it could be bad design
+   4. Not every code change is bad, when we extend functionalities we would someheow modify the app, but we won't change existing code
+
+Liskov Substitution Principle
+https://youthjosh.com/solid-principles-liskov-substitution-principle.html
+   1. Preconditions cannot be strengthen in subsystem(child classes) but they can be weaken
+   if parent class contains `if(tittle =="") {}` ,you cannot add one more condition `if(tittle=="" && !char.IsUpper(tittle,0))` in child class
+   2. Postconditions cannot be weakened
+   
+  How to avoid
+   The bigger the project the harder it is to spot LSP breaks
+   Can I use base and child class interchageably
+   Did I think about all corner cases of implemented code
+   You will get better at it seeing such code smells
+   
+ Interface Segration Principles
+  https://youthjosh.com/solid-principles-interface-segration-principles.html
+ Client should not be forced to depend upon interfaces that they do not use
+ 
+ How to Avoid
+ 1. Think about possible routes of program development
+ 2. Speak with customer/product owner about potential extension points
+ 3.Make abstractions of things, do not map real word objects into code
+ Split properties which do not fit together.
+ 
+ Why large interfaces are problematic?
+ Because they introduce unnecessary copupling between clients
+ 
+ Dependency Inversion Principle
+https://youthjosh.com/solid-principles-dependency-inversion-principle.html
+ Constructor injection
+ Method Injection
+ Property Injection
+ 
+ How to Avoid
+ The most sophisticated principles out of 5
+ Dependency injection provides extension points crucial parts of many refactorings
+ Think twice before you creat instance of low level class in high level class
+ Dependency injection gives more control to the client
+ 
+
+
+
+
+ 
+ 
